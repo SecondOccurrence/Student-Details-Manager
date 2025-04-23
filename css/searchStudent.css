@@ -1,0 +1,75 @@
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 4em;
+	width: 100% !important;
+}
+
+main p {
+	margin: 0 auto 0 auto;
+}
+
+main > #search-query {
+	width: 60%;
+	margin: auto;
+	padding: 0.5em;
+	font-size: 16px;
+	border: none;
+	border-bottom: 0.1em solid var(--text-secondary);
+	color: var(--text-primary);
+	background-color: var(--grey-2-hover);
+}
+
+main > #message {
+	margin: 0 auto 0 auto;
+}
+
+main > #search-results {
+	table-layout: fixed;
+	text-align: left;
+	border-spacing: 0;
+}
+
+main > #search-results > thead {
+	background-color: var(--grey-3);
+}
+
+main > #search-results > thead > tr > * {
+	font-size: 15px;
+	padding: 0.7em;
+	border-bottom: 0.15em solid var(--grey-3);
+}
+
+main > #search-results > tbody {
+	background-color: var(--grey-2);
+}
+
+main > #search-results > tbody > tr > * {
+	padding: 0.7em;
+	width: 10%;
+	font-size: 15px;
+	border-bottom: 0.15em solid var(--grey-3);
+	/* Photo Column */
+}
+
+main > #search-results > tbody > tr > *:nth-child(7) > #view-image {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1em;
+}
+
+main > #search-results > tbody > tr > *:nth-child(7) > #view-image > p {
+	margin: 0;
+	color: var(--link);
+	cursor: pointer;
+}
+
+main > #search-results > tbody > tr > *:nth-child(7) > #view-image > p:hover {
+	color: var(--link-hover);
+}
+
+main > #search-results > tbody > tr > *:nth-child(7) > #view-image > img {
+	max-width: 70%;
+}

@@ -1,0 +1,206 @@
+/* Button styling */
+
+.button {
+	padding: 1em 5em 1em 1em;
+	font-size: 15px;
+	border: none;
+	color: var(--text-primary);
+	background-color: var(--button);
+	cursor: pointer;
+}
+
+.button:not(.input-disabled):hover {
+	background-color: var(--button-hover);
+}
+
+#student-form {
+	display: flex;
+	flex-direction: column;
+	padding: 2em;
+	background-color: var(--grey-2);
+}
+
+/* Label styling */
+
+#student-form > label:first-child {
+	padding: 0 0 0.5em 0 !important;
+}
+
+#student-form > label:not(.gender-label, .error-text),
+#student-form > h2 {
+	padding: 2em 0 0.5em 0;
+	font-size: 14px;
+	color: var(--text-secondary);
+}
+
+#student-form > h2 {
+	margin: 0;
+
+	font-weight: normal;
+}
+
+#student-form > .error-text {
+	padding-top: 0.5em;
+	font-size: 14px;
+	color: var(--text-error);
+}
+
+#student-form > #gender-other-label {
+	padding: 1em 0 0.5em 0 !important;
+}
+
+/* Input styling */
+
+#student-form input:not(.button):focus {
+	outline: 2px solid var(--text-secondary);
+	border: none !important;
+}
+
+#student-form > input[type=text], #student-form input[type=tel] {
+	padding: 0.5em;
+	font-size: 16px;
+	border: none;
+	border-bottom: 0.1em solid var(--text-secondary);
+	color: var(--text-primary);
+	background-color: var(--grey-2-hover);
+}
+
+#student-form > .has-error {
+	outline: 2px solid var(--text-error);
+	border: none !important;
+}
+
+#student-form > .input-disabled {
+	opacity: 0.25;
+}
+
+#student-form > #gender-radios > label {
+	padding-right: 1em;
+}
+
+/* Photo chooser */
+
+#student-form > #photo-selector {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1em;
+}
+
+#student-form > #photo-selector > .button {
+	padding: 0.7em 3.5em 0.7em 0.7em !important;
+}
+
+#student-form > #photo-selector > #chosen-photo {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1em;
+	padding: 0.5em;
+	background-color: var(--grey-2-hover);
+}
+
+#student-form > #photo-selector > #chosen-photo > p {
+	margin: 0;
+	font-size: 14px;
+}
+
+#student-form > #photo-selector > #chosen-photo > img {
+	width: 1.5em;
+	cursor: pointer;
+}
+
+/* Action section */
+
+#student-form > #actions {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 2em;
+	padding-top: 2em;
+}
+
+#student-form > #actions > div {
+	display: flex;
+	gap: 3em;
+}
+
+#student-form > #actions > div > a {
+	text-decoration: none;
+}
+
+#submission-response {
+	width: 80%;
+	margin: auto;
+	padding: 2em;
+	background-color: var(--grey-2);
+}
+
+#submission-response > h2 {
+	margin: auto;
+	padding-bottom: 2em;
+	font-size: 26px;
+	text-align: center;
+}
+
+#submission-response > h2 > span.success {
+	color: var(--text-success);
+}
+
+#submission-response > h2 > span.failure {
+	color: var(--text-failure);
+}
+
+#submission-response > #submit-body {
+	display: flex;
+	flex-direction: column;
+	gap: 0.7em;
+	width: 75%;
+	margin: auto;
+	padding: 2em;
+	background-color: black;
+}
+
+/* Upload Response JSON Fields */
+
+#submission-response > #submit-body > * {
+	display: flex;
+	flex-direction: row;
+	gap: 2em;
+	font-family: monospace;
+}
+
+#submission-response > #submit-body > * > * {
+	margin: 0;
+}
+
+#submission-response > #submit-body > * > h3 {
+	flex-basis: 25%;
+	flex-shrink: 0;
+}
+
+#submission-response > h2:has(> a) {
+	margin: 0 auto 0 auto;
+	padding: 1em;
+	font-size: 18px;
+	text-align: center;
+}
+
+#submission-response > h2:has(> a) > a {
+	text-decoration: none;
+	color: var(--link);
+}
+
+#submission-response > h2:has(> a) > a:hover {
+	text-decoration: underline;
+	color: var(--link-hover);
+}
+
+#submission-response > #nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 2em;
+	padding-top: 2em;
+}

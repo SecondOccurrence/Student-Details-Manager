@@ -1,0 +1,20 @@
+body {
+	width: 100vh;
+	height: 100vh;
+}
+
+body > #server_response {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+}
+
+body > #server_response span {
+	font-family: monospace;
+}
+
+body > #server_response > p {
+	text-align: left;
+}
+

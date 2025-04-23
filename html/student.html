@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>New Student | Student Details Manager</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Josh Smith">
+		<link rel="stylesheet" href="./css/variables.css">
+		<link rel="stylesheet" href="./css/global.css">
+		<link rel="stylesheet" href="./css/newStudent.css">
+		<script src="./js/app/jquery-3.7.1.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Submit Student Details</h1>	
+		</header>
+		<main>
+			<div id="form-container">
+				<form id="student-form" action="upload" method="post" enctype="multipart/form-data" autocomplete="on">
+					<label for="studentnum">Student Number</label>
+					<input type="tel" id="studentnum" name="studentnum" placeholder="Ex. 12345678">
+					<label class="error-text" for="studentnum" hidden></label>
+
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="fname">
+					<label class="error-text" for="fname" hidden></label>
+
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="lname">
+					<label class="error-text" for="lname" hidden></label>
+
+					<label for="age">Age</label>
+					<input type="text" id="age" name="age">
+					<label class="error-text" for="age" hidden></label>
+
+					<h2>Gender</h2>
+					<div id="gender-radios">
+						<input type="radio" id="male" name="gender" value="male">
+						<label class="gender-label" for="male">Male</label>
+
+						<input type="radio" id="female" name="gender" value="female">
+						<label class="gender-label" for="female">Female</label>
+
+						<input type="radio" id="nonbinary" name="gender" value="nonbinary">
+						<label class="gender-label" for="nonbinary">Non-Binary</label>
+
+						<input type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say">
+						<label class="gender-label" for="prefer-not-to-say">Prefer Not to Say</label>
+
+						<input type="radio" id="gender-other" name="gender" value="gender-other">
+						<label class="gender-label" for="other">Other</label>
+					</div>
+					<label class="input-disabled" id="gender-other-label" for="other">Other Gender (Please Specify):</label>
+					<input class="input-disabled" type="text" id="other" name="gender" placeholder="Please Specify" disabled>
+					<label class="error-text" for="gender-other" hidden></label>
+
+					<label for="degree">Degree</label>
+					<input type="text" id="degree" name="degree" placeholder="Information Technologies">
+					<label class="error-text" for="degree" hidden></label>
+
+					<label>Photo</label>
+					<div id="photo-selector">
+						<input type="file" id="photo" name="photo" hidden>
+						<label class="button" id="choose-photo" for="photo">Add file</label>
+						<div id="chosen-photo">
+							<p>No file selected.</p>
+							<img alt="delete" src="./images/cross.svg">
+						</div>
+					</div>
+					<label class="error-text" for="photo" hidden></label>
+					<div id="actions">
+						<div>
+							<a class="button" href="/">Back</a>
+							<input class="button" type="reset" value="Reset">
+						</div>
+						<input class="button" type="submit" value="Submit">
+					</div>
+				</form>
+			</div>
+			<div id="submission-response">
+				<h2 id="submit-status">Server Response [<span></span>]</h2>
+				<div id="submit-body">
+
+				</div>
+				<h2><a id="image-link">Click here to view your photo</a></h2>
+				<div id="nav">
+					<div class="button" data-target="new_student"><span>New Student</span></div>
+					<div class="button" data-target=""><span>Home</span></div>
+					<div class="button" data-target="search_student"><span>Search Students</span></div>
+				</div>
+			</div>
+		</main>
+
+		<script src="./js/app/student/newStudent.js"></script>
+		<script src="./js/shared/studentValidation.js"></script>
+		<script src="./js/app/student/studentForm.js"></script>
+	</body>
+</html>
+

@@ -1,0 +1,27 @@
+:root {
+	font-family: sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	margin: auto;
+	background-color: var(--grey-1);
+	color: var(--text-primary);
+}
+
+body > header {
+	padding-bottom: 2em;
+	margin: 10vh auto auto auto;
+}
+
+body > main {
+	width: 35vw;
+	margin: auto;
+}
+
+.button-active {
+	background-color: var(--grey-2-active) !important;
+}

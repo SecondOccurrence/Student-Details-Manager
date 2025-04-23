@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>New Student | Student Details Manager</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Josh Smith">
+		<link rel="stylesheet" href="./css/variables.css">
+		<link rel="stylesheet" href="./css/global.css">
+		<link rel="stylesheet" href="./css/searchStudent.css">
+		<script src="./js/app/jquery-3.7.1.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Search Students</h1>	
+		</header>
+		<main>
+      <p id="message">Type in the search query box to search for a student's details</p>
+			<input id="search-query" type="text" placeholder="Search Query" autocomplete="off">
+			<table id="search-results">
+				<thead>
+					<tr>
+						<th>Student Number</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Age</th>
+						<th>Gender</th>
+						<th>Degree</th>
+						<th>Photo</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+			<p id="msg-container" hidden></p>
+		</main>
+
+		<script src="./js/app/search/searchStudent.js"></script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+:root {
+	--grey-1: #161616;
+	--grey-2: #262626;
+	--grey-2-hover: #333333;
+	--grey-2-active: #525252;
+	--grey-3: #393939;
+
+	--button: #0f62fe;
+	--button-hover: #0353e9;
+
+	--text-primary: #f4f4f4;
+	--text-secondary: #c6c6c6;
+
+	--text-error: #ffb3b8;
+	--text-success: #42be65;
+	--text-failure: #fa4d56;
+
+	--link: #78a9ff;
+	--link-hover: #a6c8ff;
+}
