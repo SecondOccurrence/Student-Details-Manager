@@ -11,7 +11,7 @@ const url = require("node:url");
  *
  */
 function startServer(route, handle) {
-	const portNum = 40203;
+	const portNum = 8080;
 
 	http.createServer((request, response) => {
 		const pathname = url.parse(request.url).pathname;
