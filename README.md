@@ -20,7 +20,15 @@ The styling of the web pages take heavy inspiration from IBM's open source desig
 
 # Assignment Functionalities
 
+## Home Page
+
+![Home Page](github/home_page.png)
+
+- Simple page with buttons to redirect the user to either of the below options
+
 ## Submission of Student Details
+
+![Student Detail Page](github/student_page.png)
 
 - Present to the user an interface that allows submission of student details, along with their degree and optional photo.
 - Information is sent to the server, and saved in a csv file `data/students.csv`
@@ -28,6 +36,8 @@ The styling of the web pages take heavy inspiration from IBM's open source desig
   - Client-side validation is performed, providing inline feedback on any potential issues
  
 ## Search for Students
+
+![Search Students](github/search_page.png)
 
 - Present an interface that allows the user to search for students on the server using a single search string
   - This string is compared to each field for each saved student
